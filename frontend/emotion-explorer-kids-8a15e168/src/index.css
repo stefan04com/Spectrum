@@ -1,0 +1,158 @@
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/nunito/800.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 40% 96%;
+    --foreground: 220 25% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 25%;
+
+    --primary: 200 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 45% 70%;
+    --secondary-foreground: 150 45% 20%;
+
+    --muted: 200 30% 90%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 45 90% 65%;
+    --accent-foreground: 45 90% 20%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 200 80% 55%;
+
+    --radius: 1rem;
+
+    /* Custom emotion colors */
+    --emotion-joy: 45 95% 60%;
+    --emotion-sadness: 220 60% 55%;
+    --emotion-anger: 0 75% 55%;
+    --emotion-fear: 280 50% 55%;
+    --emotion-disgust: 120 45% 45%;
+    --emotion-surprise: 30 90% 60%;
+
+    /* Game colors */
+    --game-bg: 200 40% 96%;
+    --game-card: 0 0% 100%;
+    --game-success: 150 70% 50%;
+    --game-error: 0 70% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 12%;
+    --foreground: 200 30% 95%;
+
+    --card: 220 25% 16%;
+    --card-foreground: 200 30% 95%;
+
+    --popover: 220 25% 16%;
+    --popover-foreground: 200 30% 95%;
+
+    --primary: 200 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 40% 35%;
+    --secondary-foreground: 150 40% 95%;
+
+    --muted: 220 20% 22%;
+    --muted-foreground: 200 20% 65%;
+
+    --accent: 45 80% 50%;
+    --accent-foreground: 45 90% 95%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 200 80% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+}
+
+@layer utilities {
+  .animate-bounce-soft {
+    animation: bounce-soft 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce-soft {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+  }
+
+  .animate-pop {
+    animation: pop 0.3s ease-out;
+  }
+
+  @keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .animate-success {
+    animation: success 0.6s ease-out;
+  }
+
+  @keyframes success {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+}

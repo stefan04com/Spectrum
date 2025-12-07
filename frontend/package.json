@@ -1,0 +1,14 @@
+{
+  "name": "emotion-parent-suite",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "emotion-explorer-kids-8a15e168"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace emotion-explorer-kids-8a15e168",
+    "build": "npm run build --workspace emotion-explorer-kids-8a15e168",
+    "preview": "npm run preview --workspace emotion-explorer-kids-8a15e168",
+    "lint": "npm run lint --workspace emotion-explorer-kids-8a15e168"
+  }
+}

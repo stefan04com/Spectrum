@@ -1,0 +1,6 @@
+USERS = {}
+CHILDREN = {}
+CHILD_PROFILES = {}
+EVENTS = []
+AVATARS = {}
+ADVICE_DOCS = []

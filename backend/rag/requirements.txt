@@ -1,0 +1,4 @@
+pdf-parse
+chromadb
+openai
+better-sqlite3

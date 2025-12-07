@@ -1,0 +1,64 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# Environment configuration
+.env
+.env.*
+!.env.example
+
+# Build / packaging artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+.pybuilder/
+
+# Tool caches
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json
+.ruff_cache/
+
+# Test and coverage outputs
+.pytest_cache/
+.tox/
+.nox/
+.coverage*
+htmlcov/
+
+# Logs and runtime data
+*.log
+logs/
+instance/
+uploads/
+tmp/
+temp/
+*.db
+*.sqlite3
+*.sqlite
+celerybeat-schedule
+
+# Notebook artifacts
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
